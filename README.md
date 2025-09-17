@@ -50,5 +50,9 @@ Implementation(Step by step):
 Features Implemented:
 * A collectable coin prefab with collision detection
 * When the coin is picked up the score will implement in the UI
-* Added the audio and particle system when the coin is picked up 
+* Added the audio and particle system when the coin is picked up
+
+Bug Fixes:
+* The Singleton pattern is the main hero of today progress i have learned it
+* Even though normally the implemented one is working but singleton makes it very ease to work
 
