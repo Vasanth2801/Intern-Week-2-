@@ -17,6 +17,7 @@ public class Coin : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))           // Checking whether the if collision happens it has player tag if correct pass in the logic
         {
+            AudioManager.instance.CoinSound();             // calling the sound function in Audiomanager using singleton pattern
             score++;                     // increase the score by one
             scoreText.text = scoreText.text + score.ToString();              // Updating the score to the scene textmeshpro                                                           // increase the score by one
             Debug.Log("Scored Increase and collision detected: " + score);       //Checking the whether the logic is working in console window 
