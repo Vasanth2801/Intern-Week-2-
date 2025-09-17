@@ -25,3 +25,22 @@ Features Implemented:
 * Adjusted the camera settings for the player smooth follow and with only set boundary
 * Created a script manually to follow the player
 * In the script added a smooth value for smooth;y follow the player
+
+
+Date : 17/9/2025
+
+Task : Collectable coin prefab with update score in UI 
+
+what I have learned :
+* How to create coin prefab and how to detect the collsion detection with two gameobjects
+* In triggerenter 2D method, how  to trigger the events
+
+Implementation(Step by step)
+* Created a cricle gameobject give it a yellow colour so it can get the feel of real coin
+* Then added a circle collider and checked the trigger to check the triggerenter event
+* Added a player and added rigidbody and boxcollider so only two colliders collision detection will happen
+* In script using debug.Log i check the collision dectection it is working really working well
+
+Features Implemented:
+* A collectable coin prefab with collision detection 
+
