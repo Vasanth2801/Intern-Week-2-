@@ -17,6 +17,6 @@ public class CameraFollow : MonoBehaviour
     void MoveCamera()
     {
         offset = new Vector3(0, 0, -10);          //offset values for the camera
-        transform.position = Vector3.SmoothDamp(transform.position, player.transform.position + offset, ref currentVelocity, smoothSpeed);   //Mathimatical method for the Smoothing function method
+        transform.position = Vector3.SmoothDamp(transform.position, player.transform.position + offset, ref currentVelocity, smoothSpeed);   //Mathimatical method for the Smoothing function method    
     }
 }
