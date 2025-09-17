@@ -34,13 +34,17 @@ Task : Collectable coin prefab with update score in UI
 what I have learned :
 * How to create coin prefab and how to detect the collsion detection with two gameobjects
 * In triggerenter 2D method, how  to trigger the events
+* How to display the coin increment in UI when we pick the coins
 
-Implementation(Step by step)
+Implementation(Step by step):
 * Created a cricle gameobject give it a yellow colour so it can get the feel of real coin
 * Then added a circle collider and checked the trigger to check the triggerenter event
 * Added a player and added rigidbody and boxcollider so only two colliders collision detection will happen
 * In script using debug.Log i check the collision dectection it is working really working well
+* In coin script add a new textmeshpro field and assign the score text we created and in script create a new varaible for the score to increment the score when it is touched
+* Now in trigger method now we add that logic so when we touch the coin it will implement the score in the UI
 
 Features Implemented:
-* A collectable coin prefab with collision detection 
+* A collectable coin prefab with collision detection
+* When the coin is picked up the score will implement in the UI
 
