@@ -63,14 +63,18 @@ Task : ScoreManager and Saving Data
 
 What I have Learned:
 * How to implement a singleton ScoreManager to call from other scripts to persisent data
-* How to add score when something is touched 
+* How to add score when something is touched
+* How to update the increase in score in UI
 
 Implementation(Step by step):
 * First created a ScoreManager script and added it to the ScoreManager GameObject
 * Then added the logic for the scoremanager using singletonpattern
 * Created a new script for collectable and make the gameObject as trigger
 * Now using singleton we are calling it this script and increase the score
+* I have created a canvas and added a text mesh pro and make it to the top left and set it to the score
+* In script by using update method  i have used to add the score in UI
 
 Features Implemented:
-* Score Increasing when the trigger is touched 
+* Score Increasing when the trigger is touched
+* Updating the Score in UI when player touches the UI 
 
