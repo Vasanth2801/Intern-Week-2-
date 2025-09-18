@@ -7,7 +7,6 @@ public class Collectable : MonoBehaviour
         if(other.tag == "Player")
         {
             ScoreManager.instance.AddScore();
-            Debug.Log("Score increased");
         }
     }
 }
