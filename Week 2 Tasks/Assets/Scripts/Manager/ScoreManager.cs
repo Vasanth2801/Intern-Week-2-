@@ -54,7 +54,6 @@ public class ScoreManager : MonoBehaviour
     void UpdateScore()
     {
         scoreText.text = "Score: " + currentScore.ToString();      // telling the text to update the score by converting the int to string as the text is string 
-        highScoreText.text = "HighScore: " + currentScore;
     }
 
 }
