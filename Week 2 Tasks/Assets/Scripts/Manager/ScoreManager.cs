@@ -25,27 +25,28 @@ public class ScoreManager : MonoBehaviour
         }
 
     }
-
+    
+    // Called at first fram of the game 
     private void Start()
     {
-        scoreText.text = "Score: " + currentScore.ToString();
-        highScoreText.text = "HighScore: " + HighScoreManager.instance.GetHighScore();
+        scoreText.text = "Score: " + currentScore.ToString();          // score at start of the game which is zero
+        highScoreText.text = "HighScore: " + HighScoreManager.instance.GetHighScore();      //High score while starting if zero it is zero orelse the score we which is highest 
     }
 
     // Called for every frame
     private void Update()
     {
-        UpdateScore();
+        UpdateScore();       //Method to update the score 
     }
 
     // public method to call the score from other script 
     public void AddScore()
     {
-        currentScore++;             //Increasing the Score by 1
-        if(currentScore > HighScoreManager.instance.GetHighScore())
+        currentScore++;                                                   //Increasing the Score by 1
+        if(currentScore > HighScoreManager.instance.GetHighScore())      //checking if current score is higher than zero 
         {
-            PlayerPrefs.SetInt("HighScore", currentScore);                 //To save the highscore we get
-            highScoreText.text = "HighScore: " + currentScore;             //
+            PlayerPrefs.SetInt("HighScore", currentScore);                 //Then show the highest score in UI
+            highScoreText.text = "HighScore: " + currentScore;             // Then store that  score in as highest score
         }
        
     } 
