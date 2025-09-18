@@ -56,3 +56,15 @@ Bug Fixes:
 * The Singleton pattern is the main hero of today progress i have learned it
 * Even though normally the implemented one is working but singleton makes it very ease to work
 
+
+Date : 18/9/2025
+
+Task : ScoreManager and Saving Data
+
+What I have Learned:
+* How to implement a singleton ScoreManager to call from other scripts to persisent data
+
+Implementation(Step by step):
+* First created a ScoreManager script and added it to the ScoreManager GameObject
+* Then added the logic for the scoremanager using singletonpattern
+
