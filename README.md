@@ -65,6 +65,7 @@ What I have Learned:
 * How to implement a singleton ScoreManager to call from other scripts to persisent data
 * How to add score when something is touched
 * How to update the increase in score in UI
+* How to save the game data using player prefs 
 
 Implementation(Step by step):
 * First created a ScoreManager script and added it to the ScoreManager GameObject
@@ -73,8 +74,15 @@ Implementation(Step by step):
 * Now using singleton we are calling it this script and increase the score
 * I have created a canvas and added a text mesh pro and make it to the top left and set it to the score
 * In script by using update method  i have used to add the score in UI
+* Created a new empty gameobject and named it high score manager and added the script to it and and used singlepattern to call it scoremanager script
+* when the player is adding the coins then the score will increase and when the current score higher than the start score then when we restart the game the current score resets
+* but the highscore will still stay the same when we again start the game 
 
 Features Implemented:
 * Score Increasing when the trigger is touched
-* Updating the Score in UI when player touches the UI 
+* Updating the Score in UI when player touches the UI
+* A highscore saving system using the PlayerPrefs
+
+Summary:
+*Today i learned about how to save the player data using the player prefs system
 
