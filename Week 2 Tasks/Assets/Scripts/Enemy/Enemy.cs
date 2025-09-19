@@ -16,5 +16,13 @@ public class Enemy : MonoBehaviour
 
             enemySpawner.waves[enemySpawner.currentWave].enemiesCount--;
         }
+
+        if(other.collider.CompareTag("Player"))
+        {
+            Debug.Log("Player Hit");
+            Destroy(other.gameObject);
+            Destroy(gameObject);
+            enemySpawner.waves[enemySpawner.currentWave].enemiesCount--;
+        }
     }
 }

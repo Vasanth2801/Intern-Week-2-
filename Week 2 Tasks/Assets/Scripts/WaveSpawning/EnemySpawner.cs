@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using TMPro;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class EnemySpawner : MonoBehaviour
     public Transform[] spawnPoint;          //Spawn point for the enemies
     public int currentWave = 0;                        //current wave that is being spawning from the array 
     private bool countDownBegin;                       //Bool to check if the countdown has begun or not
+    [SerializeField] private TextMeshProUGUI waveCountDownText; //Text to display the countdown timer
     private void Start()
     {
         countDownBegin = true;                        //Starting the countdown when the game starts
@@ -24,11 +26,13 @@ public class EnemySpawner : MonoBehaviour
         {
             waves[i].enemiesCount = waves[i].enemies.Length;      //Setting the enemy count for each wave based on the no.of enemies in the array 
         }
+        waveCountDownText.text = "wave: " + currentWave.ToString();       //instailizing the wave count text
     }
 
 
     private void Update()
     {
+        waveCountDownText.text = "wave: " + currentWave.ToString();
         if(currentWave >= waves.Length)
         {
             Debug.Log("All Waves Completed!");          //Debugging when all the waves are completed
