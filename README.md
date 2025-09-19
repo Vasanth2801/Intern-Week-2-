@@ -112,4 +112,7 @@ Features Implemented :
 * Spawning the waves at the requird interval
 * Spawning the waves one after one
 * Spawning the enemies at random position
-* Showing the UI of the current wave doing 
+* Showing the UI of the current wave doing
+
+Summary:
+* Today i learned about the array uage in wave system and how to implemenet the wave System for the enemies 
