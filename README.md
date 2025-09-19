@@ -86,3 +86,18 @@ Features Implemented:
 Summary:
 *Today i learned about how to save the player data using the player prefs system
 
+Date : 19/9/2025
+
+Task : Enemy Spawner using waves
+
+What i Have Leanred:
+
+
+
+
+Implementation(Step by step):
+* First create a empty gameobject and name it as EnemeySpawner
+* Add a New script to the ENemySpawner and created three new enemies with different sprites
+* Now make the enmies as a prefab and delete it in the scene view 
+
+
