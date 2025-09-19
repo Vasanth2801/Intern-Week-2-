@@ -22,7 +22,7 @@ public class HighScoreManager : MonoBehaviour
     //Method for setting the High score where at start of the game 
     public int GetHighScore()
     {
-       return PlayerPrefs.GetInt("HighScore", 0);       .//At start of the game the highest score is zero
+       return PlayerPrefs.GetInt("HighScore", 0);       //At start of the game the highest score is zero
     }
 
     
