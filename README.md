@@ -91,9 +91,10 @@ Date : 19/9/2025
 Task : Enemy Spawner using waves
 
 What I Have Leanred:
-* How to implement the Spawn wave at a required interval 
-
-
+* How to implement the Spawn wave at a required interval
+* How to spawn enemies with wave system at a single point
+* How to spawn enemies with random point at the wave system
+* How to display the current wave we are using 
 
 Implementation(Step by step):
 * First create a empty gameobject and name it as EnemeySpawner
@@ -101,7 +102,14 @@ Implementation(Step by step):
 * Now make the enmies as a prefab and delete it in the hiearchy view
 * In Script created a variable for the wave spawning time and it as shown in inspector
 * When the game is running less the countdown timer and when it reaches zero spawn the wave
+* Now we have only one spawn point but we have do it at random points spawning
+* For that we create multiple points and go through that and make it drop from there
+* Now we want to display the current wave in the UI
+* we created a textmeshpro and also added to script reference and use it in update method and update the score in UI
 
 
 Features Implemented :
-* Spawning the waves a t the requird interval
+* Spawning the waves at the requird interval
+* Spawning the waves one after one
+* Spawning the enemies at random position
+* Showing the UI of the current wave doing 
