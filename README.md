@@ -90,14 +90,18 @@ Date : 19/9/2025
 
 Task : Enemy Spawner using waves
 
-What i Have Leanred:
-
+What I Have Leanred:
+* How to implement the Spawn wave at a required interval 
 
 
 
 Implementation(Step by step):
 * First create a empty gameobject and name it as EnemeySpawner
 * Add a New script to the ENemySpawner and created three new enemies with different sprites
-* Now make the enmies as a prefab and delete it in the scene view 
+* Now make the enmies as a prefab and delete it in the hiearchy view
+* In Script created a variable for the wave spawning time and it as shown in inspector
+* When the game is running less the countdown timer and when it reaches zero spawn the wave
 
 
+Features Implemented :
+* Spawning the waves a t the requird interval
