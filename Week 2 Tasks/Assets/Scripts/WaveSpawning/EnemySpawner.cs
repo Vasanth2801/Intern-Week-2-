@@ -13,38 +13,42 @@ public class EnemySpawner : MonoBehaviour
         public int enemiesCount;                    //Number of enemies in the wave
     }
 
+    [Header("Wave Settings")]
     [SerializeField] private float countDown;            //Time interval for spawning the waves 
-    public  Wave[] waves;                 //Array to store the waves that can be spawned 
-    public Transform[] spawnPoint;          //Spawn point for the enemies
+    public  Wave[] waves;                                 //Array to store the waves that can be spawned 
+    public Transform[] spawnPoint;                       //Spawn point for the enemies
     public int currentWave = 0;                        //current wave that is being spawning from the array 
     private bool countDownBegin;                       //Bool to check if the countdown has begun or not
     [SerializeField] private TextMeshProUGUI waveCountDownText; //Text to display the countdown timer
+
+
+    // called at the first frame of the update
     private void Start()
     {
         countDownBegin = true;                        //Starting the countdown when the game starts
-        for (int i = 0; i < waves.Length; i++)
+        for (int i = 0; i < waves.Length; i++)             // going through each wave in the array
         {
             waves[i].enemiesCount = waves[i].enemies.Length;      //Setting the enemy count for each wave based on the no.of enemies in the array 
         }
         waveCountDownText.text = "wave: " + currentWave.ToString();       //instailizing the wave count text
     }
 
-
+    // called for every second frame
     private void Update()
     {
-        waveCountDownText.text = "wave: " + currentWave.ToString();
-        if(currentWave >= waves.Length)
+        waveCountDownText.text = "wave: " + currentWave.ToString();       //Updating the wave count text in the current frame
+        if (currentWave >= waves.Length)                                  //Checking if all the waves are completed
         {
             Debug.Log("All Waves Completed!");          //Debugging when all the waves are completed
             return;
         }
-        if (countDownBegin == true)
+        if (countDownBegin == true)                      // Checking if the countdown has begun
         {
             countDown -= Time.deltaTime;                  //Decreasing the countdown time when the game start running
         }
        
 
-        if(countDown <= 0f)
+        if(countDown <= 0f)                              //if countdown reaches zero
         {
             countDownBegin = false;                      //Stopping the countdown when the wave is spawned
             countDown = waves[currentWave].timeBetweenWaves;   // Resetting the countdown timer for the waves to spawn
@@ -52,18 +56,20 @@ public class EnemySpawner : MonoBehaviour
             StartCoroutine(SpawnWave());
         }
 
-        if (waves[currentWave].enemiesCount == 0)
+        if (waves[currentWave].enemiesCount == 0)                  // if it reaches zero it means the wave is cleared
         {
             countDownBegin = true;                       //Starting the countdown when the wave is cleared
             currentWave++;                              //Increasing the wave index to spawn the next wave
         }
     }
 
+
+    // coroutine to spawn the wave of enemies
     IEnumerator SpawnWave()
     {
-        if(currentWave < waves.Length)
+        if(currentWave < waves.Length)                 // checking if the wave number is less than the total number of waves
         {
-            for (int i = 0; i < waves[currentWave].enemies.Length; i++)
+            for (int i = 0; i < waves[currentWave].enemies.Length; i++)         // going through each enemy in the current wave
             {
                 Transform spawnPoints = spawnPoint[Random.Range(0,spawnPoint.Length)]; //Choosing a random spawn point from the array
                 Enemy enemy = Instantiate(waves[currentWave].enemies[i],spawnPoints.position , Quaternion.identity);    //spawning the enemies at the spawn position
