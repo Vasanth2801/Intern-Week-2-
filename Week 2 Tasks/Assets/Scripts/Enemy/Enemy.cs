@@ -2,11 +2,19 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    void OnTriggerEnter2D(Collider2D other)
+    private EnemySpawner enemySpawner;
+
+    private void Start()
     {
-        if(other.CompareTag("Player"))
+        enemySpawner = GetComponentInParent<EnemySpawner>();
+    }
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.collider.CompareTag("Ground"))
         {
-            Debug.Log("GameOVer");
+            Destroy(gameObject);
+
+            enemySpawner.waves[enemySpawner.currentWave].enemiesCount--;
         }
     }
 }
