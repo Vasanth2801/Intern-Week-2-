@@ -115,4 +115,20 @@ Features Implemented :
 * Showing the UI of the current wave doing
 
 Summary:
-* Today i learned about the array uage in wave system and how to implemenet the wave System for the enemies 
+* Today i learned about the array uage in wave system and how to implemenet the wave System for the enemies
+
+Date: 22/9/2025
+
+Task: Animation for Player and Enemy
+
+
+What I have learned:
+* How to import the asset package from unity asset store
+
+Implementation(Step by step):
+* First I have gone to unity asset and searched for 2D charcter and choose the asset to download
+* Then give add to my assets and give add in unity editor and downloaded the asset added the folder in the asset package
+
+
+FeaturesImplemented:
+
