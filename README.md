@@ -124,15 +124,17 @@ Task: Animation for Player and Enemy
 
 What I have learned:
 * How to import the asset package from unity asset store
-* How to create animation and add it in the animator window 
+* How to create animation and add it in the animator window
+* How to do animation Transtions between other animations
 
 Implementation(Step by step):
 * First I have gone to unity asset and searched for 2D charcter and choose the asset to download
 * Then give add to my assets and give add in unity editor and downloaded the asset added the folder in the asset package
 * Now i have opened the animation window and created a new animation folder and added the created the animations in that folder
 * Now also i have a new window animator which handles the movement of the animations we are creating
-* 
+* Have created the animation transitions between each animations in the animator window
 
 
 FeaturesImplemented:
-* Created  animations using the image sprites 
+* Created  animations using the image sprites
+* Added the animation transtions between each animations 
