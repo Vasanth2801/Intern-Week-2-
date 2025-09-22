@@ -5,7 +5,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float speed = 5f;              // Movement of the Player
     Rigidbody2D rb;                                        // Rigidbody References
     Vector2 movement;                                     // Movement for two axis 
-    TopdownController controller;                         //Refernce for InputActions
+    TopdownController controller;                         //Reference for InputActions
 
     //Awake Calls before Start Method
     private void Awake()
