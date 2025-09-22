@@ -126,6 +126,8 @@ What I have learned:
 * How to import the asset package from unity asset store
 * How to create animation and add it in the animator window
 * How to do animation Transtions between other animations
+* How to do the animation transtions using the movement script
+* How to do the enemy animations 
 
 Implementation(Step by step):
 * First I have gone to unity asset and searched for 2D charcter and choose the asset to download
@@ -133,8 +135,13 @@ Implementation(Step by step):
 * Now i have opened the animation window and created a new animation folder and added the created the animations in that folder
 * Now also i have a new window animator which handles the movement of the animations we are creating
 * Have created the animation transitions between each animations in the animator window
+* Have created a new script and attached it to the player and when player moves or jumps the corresponding animation is playing
+* have created a another script for the enemy and make it follow the player from the start
+* So for enemy we have to make it follow the enemy with flying aniamtions 
 
 
 FeaturesImplemented:
 * Created  animations using the image sprites
-* Added the animation transtions between each animations 
+* Added the animation transtions between each animations
+* Added the player animations for player moving and jumping
+* Added the enmy animations for player chasing the enemy 
