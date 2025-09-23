@@ -37,9 +37,9 @@ public class Bullet : MonoBehaviour
         if(other.CompareTag("Enemy"))
         {
             Destroy(other.gameObject);                        // Destroy the enemy on collision
-            AudioManagerForMusicandShooting.instance.PlayEnemyDeath(); // Play enemy death sound
+            //AudioManagerForMusicandShooting.instance.PlayEnemyDeath(); // Play enemy death sound
+            FindObjectOfType<AnotherAudioManager>().Play("EnemyDeath"); // Play enemy death sound
             gameObject.SetActive(false);                           // Deactivate the bullet on collision
         }
-        
     }
 }
