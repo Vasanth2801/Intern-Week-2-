@@ -3,7 +3,7 @@ using UnityEngine;
 public class Gun : MonoBehaviour
 {
     [SerializeField] Transform firePoint;          // Point from where the bullet will be fired
-    [SerializeField] ObjectPoolManager poolManager; // Reference to the ObjectPoolManager   
+    [SerializeField] ObjectPoolManager poolManager; // Reference to the ObjectPoolManager
 
 
     void Update()
@@ -18,5 +18,6 @@ public class Gun : MonoBehaviour
     void Shoot()
     {
         poolManager.SpawnFromPool("Bullet", firePoint.position, firePoint.rotation); // Spawn a bullet from the pool
+        AudioManagerForMusicandShooting.instance.PlayShoot(); // Play shooting sound
     }
 }
