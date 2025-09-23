@@ -144,4 +144,21 @@ FeaturesImplemented:
 * Created  animations using the image sprites
 * Added the animation transtions between each animations
 * Added the player animations for player moving and jumping
-* Added the enmy animations for player chasing the enemy 
+* Added the enmy animations for player chasing the enemy
+
+
+Date: 23/9/2025
+
+Task : AudioManager for loopmusic and SFX effects 
+
+What i have Learned:
+* How to Implement the audio for music running continous loop
+* 
+
+Implementation(Step by step):
+* First created a normal scene setup with player,enemy and where player shoots when player press space
+* Now all in place created a empty gameobject named as audio manager and script named "Audio manager for music and shooting
+* Downloade the rquired sound effects and music and then now in script we add the logic for the music which plays at the start
+
+Features Implemented:
+* When game starts the music play on loop
