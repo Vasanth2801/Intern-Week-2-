@@ -153,12 +153,20 @@ Task : AudioManager for loopmusic and SFX effects
 
 What i have Learned:
 * How to Implement the audio for music running continous loop
-* 
+* How to add Sfx Effects for specific events
+* How to adjust them in audio source settings of the volume 
 
 Implementation(Step by step):
 * First created a normal scene setup with player,enemy and where player shoots when player press space
 * Now all in place created a empty gameobject named as audio manager and script named "Audio manager for music and shooting
-* Downloade the rquired sound effects and music and then now in script we add the logic for the music which plays at the start
+* Download the rquired sound effects and music and then now in script we add the logic for the music which plays at the start
+* Downladed the specific sound effects and added it to the folder
+* Now in audio manager script using the sound effects when certain action happen trigger the sound effect
 
 Features Implemented:
 * When game starts the music play on loop
+* Sound effects triggering when certain events happens
+* Shooting sound,enemy death sound and music loop throufh the game happens
+
+Summary:
+* Today i learned about audio system and managing it in the script and how to certain trigger events happening 
