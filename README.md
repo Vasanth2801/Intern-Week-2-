@@ -181,14 +181,26 @@ Date: 24/9/2025
 Task: UI Menu and Pause Menu
 
 What I have learned:
-* How to Implement a Complete Start Menu with Options menu 
+* How to Implement a Complete Start Menu with Options menu
+* How to implement a pause Menu UI
+* How to implement a Gameoverscreen when certain events happen
 
 Implementation(Step by step):
 * First created a new Scene and named it as start menu and now added a UI canvas to it
 * Now add the buttons to the functionality like play,options and quit
 * Now we add the logic for the menu and add the onclick events in the inspector
-* Then we check the functionality of the buttons 
+* Then we check the functionality of the buttons
+* Added a two new panel as pause menu Ui and gameover Screen
+* Added the buttons and text for both the panels
+* Using one script gamemanager singleton pattern implement the all the button functions for flexibilty
+* Now called it in another script and tested it very easy to work 
 
 Features Implemented:
 * The start menu With play,options and quit buttons
+* Pause menu with resume and mainmenu
+* gameover scene with restart function
+
+Summary:
+* today I learned about how to implement pauseMenu and startmenu
+* How to work efficiently in UI related works
 
