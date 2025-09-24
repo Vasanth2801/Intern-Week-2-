@@ -174,3 +174,21 @@ Features Implemented:
 Summary:
 * Today i learned about audio system and managing it in the script and how to certain trigger events happening
 * Today i learned abouy another way of implementing the audio system
+
+
+Date: 24/9/2025
+
+Task: UI Menu and Pause Menu
+
+What I have learned:
+* How to Implement a Complete Start Menu with Options menu 
+
+Implementation(Step by step):
+* First created a new Scene and named it as start menu and now added a UI canvas to it
+* Now add the buttons to the functionality like play,options and quit
+* Now we add the logic for the menu and add the onclick events in the inspector
+* Then we check the functionality of the buttons 
+
+Features Implemented:
+* The start menu With play,options and quit buttons
+
