@@ -19,6 +19,6 @@ public class Gun : MonoBehaviour
     {
         poolManager.SpawnFromPool("Bullet", firePoint.position, firePoint.rotation); // Spawn a bullet from the pool
        // AudioManagerForMusicandShooting.instance.PlayShoot(); // Play shooting sound
-       FindObjectOfType<AnotherAudioManager>().Play("Shoot"); // Play shooting sound
+      // FindObjectOfType<AnotherAudioManager>().Play("Shoot"); // Play shooting sound
     }
 }

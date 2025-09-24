@@ -21,7 +21,7 @@ public class Coin : MonoBehaviour
     void CoinBehaviour()
     {
         CoinManager.Instance.AddScore();      //scoring for the picking coin called using singleton
-        AudioManager.instance.CoinSound();     //Audio for the coin 
+        // AudioManager.instance.CoinSound();     //Audio for the coin 
 ;       Debug.Log("Coin picked up");
         Destroy(this.gameObject);          //destroying the coin
     }

@@ -21,4 +21,13 @@ public class EnemyFollow : MonoBehaviour
             transform.position += direction * speed * Time.deltaTime;
         }
     }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            GameManager.instance.GameOver(); // Call the Restart method from GameManager
+            Debug.Log("Enemy collided with Player");
+        }
+    }
 }
